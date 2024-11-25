@@ -2,3 +2,15 @@
     text-align: center;
     margin-top: 2%;
 }
+.cursos{
+    h2{
+        text-align: center;
+    }
+    border: 1px solid yellowgreen;
+}
+@mixin estilo_curso(){
+    background-color: rgb(224, 224, 224);
+}
+.curso{
+    @include estilo_curso();
+}

@@ -1,4 +1,15 @@
 .login {
   text-align: center;
   margin-top: 2%;
+}
+
+.cursos {
+  border: 1px solid yellowgreen;
+}
+.cursos h2 {
+  text-align: center;
+}
+
+.curso {
+  background-color: rgb(224, 224, 224);
 }/*# sourceMappingURL=scss.css.map */
