@@ -10,26 +10,32 @@
   width: 30%;
 }
 
-.login, .login button {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
 * {
   border: 1px;
   border-radius: 5px;
 }
 
-.login {
-  padding: 2%;
-  text-align: center;
-  background-color: rgb(155, 201, 245);
+header {
+  display: grid;
+  grid-template-columns: 10fr auto;
   margin: 2%;
+  padding: 1%;
+  background-color: rgb(255, 225, 186);
 }
-.login input {
+header .demas {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+}
+header .demas button {
   border: 1px solid black;
-  padding: 5px;
-  border-radius: 0px;
+  padding: 15px;
 }
+header .demas button:hover {
+  transition: 400ms;
+  background-color: rgb(221, 221, 221);
+}
+
 .contenedor {
   padding-left: 2%;
   padding-right: 2%;
@@ -52,6 +58,18 @@
 .curso img:hover {
   width: 35%;
   transition: 400ms;
+}
+.curso button {
+  border: 2px;
+  border-radius: 5px;
+  margin-top: 2%;
+  padding: 10px;
+  color: black;
+  background-color: rgb(117, 192, 241);
+}
+.curso button:hover {
+  transition: 400ms;
+  background-color: rgb(87, 140, 175);
 }
 
 .cursos {
