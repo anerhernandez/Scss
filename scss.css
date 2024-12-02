@@ -20,7 +20,6 @@ header {
   grid-template-columns: 10fr auto;
   margin: 2%;
   padding: 1%;
-  background-color: rgb(255, 225, 186);
 }
 header .demas {
   display: grid;
@@ -42,13 +41,11 @@ header .demas button:hover {
 }
 .contenedor #tituloh2 {
   text-align: center;
-  background-color: rgb(197, 197, 197);
   padding: 20px;
   color: black;
 }
 
 .curso {
-  background-color: rgb(231, 231, 231);
   padding: 5%;
 }
 .curso:hover {
