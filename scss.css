@@ -1,25 +1,35 @@
-.cursos {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: black;
-}
-.cursos h2 {
-  color: red;
-  text-shadow: 2px 1px rgb(82, 82, 82);
-}
-.cursos img {
-  width: 30%;
-}
-
 * {
   border: 1px;
   border-radius: 5px;
 }
 
+body {
+  margin: 0;
+}
+
+.curso {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  padding: 5%;
+}
+.curso h2 {
+  color: black;
+}
+.curso img {
+  width: 30%;
+}
+
 header {
-  display: grid;
-  grid-template-columns: 10fr auto;
-  margin: 2%;
+  border: 1px solid black;
   padding: 1%;
+  border-radius: 0px;
+}
+
+header {
+  color: white;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 header .demas {
   display: grid;
@@ -27,7 +37,9 @@ header .demas {
   gap: 20px;
 }
 header .demas button {
-  border: 1px solid black;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
   padding: 15px;
 }
 header .demas button:hover {
@@ -40,16 +52,15 @@ header .demas button:hover {
   padding-right: 2%;
 }
 .contenedor #tituloh2 {
+  font-size: 40px;
+  font-family: arial;
   text-align: center;
   padding: 20px;
   color: black;
 }
 
 .curso {
-  padding: 5%;
-}
-.curso:hover {
-  background-color: rgb(207, 207, 207);
+  border: 2px solid rgb(211, 210, 210);
   transition: 400ms;
 }
 .curso img:hover {
@@ -61,12 +72,12 @@ header .demas button:hover {
   border-radius: 5px;
   margin-top: 2%;
   padding: 10px;
-  color: black;
-  background-color: rgb(117, 192, 241);
+  color: white;
+  background-color: rgb(50, 85, 240);
 }
 .curso button:hover {
   transition: 400ms;
-  background-color: rgb(87, 140, 175);
+  background-color: rgb(69, 103, 253);
 }
 
 .cursos {
