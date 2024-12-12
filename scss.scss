@@ -1,93 +1,103 @@
-$light_blue : rgb(69, 103, 253);
-$dark_blue : rgb(50, 85, 240);
+/*General css (variables and clases)*/
+$light_blue: rgb(69, 103, 253);
+$dark_blue: rgb(50, 85, 240);
 $arial: Arial, Helvetica, sans-serif;
-$segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-*{
-    border: 1px;
-    border-radius: 5px;
-}
-body{
-    margin: 0;
-}
-%estilo_curso{
+$segoe: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+%estilo_curso {
     font-family: $segoe;
-    h2{
+    h2 {
         color: black;
     }
-    color: black; 
-    img{
+    color: black;
+    img {
         width: 30%;
     }
     padding: 5%;
 }
 
-%noborders{
+%noborders {
     border: 1px solid black;
     padding: 1%;
     border-radius: 0px;
 }
-
-header{
-    color: white;
-    background-color: black;
+* {
+  border: 1px;
+  border-radius: 5px;
+}
+body {
+  margin: 0;
+}
+/*------------------------------*/
+/*Specific css*/
+header {
+  color: white;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  @extend %noborders;
+  img{
+    width: 4%;
+  }
+  .demas {
     display: grid;
     grid-template-columns: 1fr auto;
-    @extend %noborders;
-    .demas{
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 20px;
-        button{
-            color: white;
-            background-color: black;
-            border: 2px solid white;
-            padding: 15px;
-        }
-        button:hover{
-            transition: 400ms;
-            background-color: rgb(221, 221, 221);
-        }
+    gap: 20px;
+
+    button {
+      color: white;
+      background-color: black;
+      border: 2px solid white;
+      padding: 15px;
     }
+
+    button:hover {
+      transition: 400ms;
+      background-color: rgb(49, 47, 47);
+    }
+  }
 }
-.contenedor{
-    #tituloh2{
-        font-size: 40px;
-        font-family: arial;
-        text-align: center;
-        padding: 20px;
-        color: black;
-    }
+
+.contenedor {
     padding-left: 2%;
     padding-right: 2%;
-}
-.curso{
-    @extend %estilo_curso;
 
-        border: 2px solid rgb(211, 210, 210);
-        transition: 400ms;
-    
-    img:hover{
-        width: 35%;
-        transition: 400ms;
-    }
-    button{
-        border: 2px;
-        border-radius: 5px;
-        margin-top: 2%;
-        padding: 10px;
-        color: white;
-        background-color: $dark_blue;
-    }
-    button:hover{
-        transition: 400ms;
-        background-color: $light_blue;
-    }
-    
-}
-.cursos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    #tituloh2 {
+    font-size: 40px;
+    font-family: arial;
     text-align: center;
-    gap: 10px;
-    
+    padding: 20px;
+    color: black;
+  }
+}
+
+.curso {
+  @extend %estilo_curso;
+  border: 2px solid rgb(210, 210, 210);
+  transition: 400ms;
+  background-color: rgb(245, 245, 245);
+  img:hover {
+    width: 35%;
+    transition: 400ms;
+  }
+
+  button {
+    border: 2px;
+    border-radius: 5px;
+    margin-top: 2%;
+    padding: 10px;
+    color: white;
+    background-color: $dark_blue;
+  }
+
+  button:hover {
+    transition: 400ms;
+    background-color: $light_blue;
+  }
+}
+
+.cursos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  gap: 10px;
 }
