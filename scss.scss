@@ -3,6 +3,30 @@ $light_blue: rgb(69, 103, 253);
 $dark_blue: rgb(50, 85, 240);
 $arial: Arial, Helvetica, sans-serif;
 $segoe: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+@mixin estilocursos($bgb : rgb(245, 245, 245), $bg: rgb(210, 210, 210)){
+  border: 2px solid $bg;
+  transition: 400ms;
+  background-color: $bgb;
+  img:hover {
+    width: 35%;
+    transition: 400ms;
+  }
+
+  button {
+    border: 2px;
+    border-radius: 5px;
+    margin-top: 2%;
+    padding: 10px;
+    color: white;
+    background-color: $dark_blue;
+  }
+
+  button:hover {
+    transition: 400ms;
+    background-color: $light_blue;
+  }
+}
 %estilo_curso {
     font-family: $segoe;
     h2 {
@@ -71,28 +95,24 @@ header {
 }
 
 .curso {
+  @include estilocursos();
+
   @extend %estilo_curso;
-  border: 2px solid rgb(210, 210, 210);
-  transition: 400ms;
-  background-color: rgb(245, 245, 245);
-  img:hover {
-    width: 35%;
-    transition: 400ms;
-  }
+  
+}
 
-  button {
-    border: 2px;
-    border-radius: 5px;
-    margin-top: 2%;
-    padding: 10px;
-    color: white;
-    background-color: $dark_blue;
-  }
+.cursoN{
+  @include estilocursos($bgb: rgb(250,250,250) , $bg: rgb(240,0,0));
 
-  button:hover {
-    transition: 400ms;
-    background-color: $light_blue;
-  }
+
+  button:disabled,
+  button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+  @extend %estilo_curso;
+
 }
 
 .cursos {
